@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Almarai", sans-serif;
+}
+ul , li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    height: 80px;
+}
+.container{
+    width: 1400px;
+    margin: auto;
+
+}
+.navbar img{
+    width: 140px;
+    height: 35px;
+}
+.navbar ul{
+    display: flex;
+    width: 60%;
+    gap: 30px;
+}
+.navbar ul li {
+    position: relative;
+}
+.navbar ul li a{
+    color: #000;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.navbar ul li a span{
+    margin-top: -5px;
+    }
+.navbar ul li a:hover{
+    color: #f8b517;
+}
+.dropdown{
+ width: 200px !important;
+ background-color: white;
+ position: absolute;
+ flex-direction: column;
+    padding: 10px 10px;
+    margin-left: -50px;
+    display: none;
+    border-radius: 15px;
+
+}
+.dropdown  li{
+margin: 15px 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding:  0 0 0 5px;
+}
+.dropdown li a{
+    font-weight: 500;
+
+}
+.btn{
+    border-radius: 10px;
+    font-size: 13px ;
+    font-weight: 700;
+    margin: .5rem;
+    padding: 16px 32px ;
+    background-color: transparent;
+}
+.btn-border{
+    border: 1px solid #785a28 ;
+    border-radius: 10px;
+    color: #785a28 ;
+    font-size: 13px ;
+    font-weight: 700;
+    margin: .5rem;
+    padding: 16px 32px ;
+}
+.btn-border:hover{
+border: none;
+background-color: #f8b517;
+color: black;
+}
+.btn-sign{
+    background-color: #f8b517;
+    border: none;
+    outline: none;
+}
+.hero{
+    background-color: #2e2a27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+   
+}
+.hero .title{
+    font-size: 72px;
+    background:  linear-gradient(250deg, #c9c2b8, #ffc641 173.43%);
+    -webkit-text-fill-color: linear-gradient(250deg, #c9c2b8, #ffc641 173.43%);;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+ul li:hover  .dropdown{
+    display: block;
+}
+@media  screen and (max-width: 768px) {
+    .container {
+
+        width: 768px;
+    }
+.navbar ,.navbar ul {
+     flex-direction: column;
+    width: auto;
+ }
+
+.navbar{
+    background: White;
+    width: 50%;
+    height: 50vh;
+    justify-content: space-between;
+}
+.dropdown{
+    background: white;
+    z-index: 2;
+}
+
+}
